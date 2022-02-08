@@ -12,6 +12,7 @@
 </p>
 
 - I am a passionate problem solver and love to deal with real world problems through codes.
+- Currently I am working with TATA resolving technical problems through applications for clients all across the globe.
 - Beyond this I am a hobby travel vlogger running a youtube channel about my adventures.
 
 ## Primary tech stack
