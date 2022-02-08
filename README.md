@@ -33,7 +33,7 @@
   <img src="https://img.shields.io/badge/SQL%20Server-%2307405e.svg?&style=for-the-badge&logo=microsoft&logoColor=white" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white" /> 
-  <img src="  https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" /> 
+  <img src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" /> 
 </p>
   
 
