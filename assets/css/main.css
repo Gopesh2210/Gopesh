@@ -2641,6 +2641,7 @@ input, select, textarea {
 	}
 
 		header.major h2 {
+			font-weight: 500;
 			font-size: 2em;
 		}
 
@@ -2678,7 +2679,7 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 		header.major h2:after{
-			width: 10em;
+			width: 100%;
 		}
 
 		header.major {
@@ -3015,25 +3016,28 @@ input, select, textarea {
 
 .company-title{
 	font-size: 1.75em;
-	font-weight: 700;
+	font-weight: 500;
 }
 .company-time{
 	font-size: 1em;
-	font-weight: 600;
+	font-weight: 300;
+}
+.sub-company-title{
+	font-size: 1em;
 }
 .job-title{
 	font-size: 1.25em;
-	font-weight: 700;
+	font-weight: 500;
 	margin-bottom: 1em;
 }
 
 .job-project-title{
-	font-size: 1em;
-	font-weight: 600;
+	font-size: 1.1em;
+	font-weight: 500;
 }
 .techstack-title{
-	font-size: 1em;
-	font-weight: 600;
+	font-size: 1.1em;
+	font-weight: 500;
 	padding-bottom: 0.5em;
 }
 
