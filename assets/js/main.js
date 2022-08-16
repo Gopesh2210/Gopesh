@@ -1,8 +1,3 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 (function($) {
 
@@ -115,9 +110,44 @@
 
 		}
 
-	// Scrolly.
+		// Scrolly.
 		$('.scrolly').scrolly({
 			speed: 1000
 		});
 
+		// Dark Mode toggler
+		$('input[type="checkbox"]').click(function(){
+			if($(this).prop("checked") == true){
+				toggleDarkMode();
+			}
+			else if($(this).prop("checked") == false){
+				toggleLightMode();
+			}
+		});
+
 })(jQuery);
+
+
+// toggle dark mode
+function toggleDarkMode() {
+	var mainbody = document.getElementById("main");
+	mainbody.classList.add("dark-mode");
+	mainbody.classList.remove("light-mode");
+
+	var showmore = document.getElementById("show-more");
+	showmore.classList.add("dark-mode");
+	showmore.classList.remove("light-mode");
+	
+ }
+
+// toggle light mode
+ function toggleLightMode() {
+	var mainbody = document.getElementById("main");
+	mainbody.classList.add("light-mode");
+	mainbody.classList.remove("dark-mode");
+
+	var showmore = document.getElementById("show-more");
+	showmore.classList.add("light-mode");
+	showmore.classList.remove("dark-mode");
+
+ }

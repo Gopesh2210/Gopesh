@@ -33,14 +33,15 @@
 		</nav>
 
 		<!-- Main -->
-		<div id="main">
+		<div id="main" class="dark-mode light-mode">
 
 			<!-- Introduction -->
 			<section id="intro" class="main">
+
 				<div class="spotlight">
 					<div class="content">
 						<header class="major">
-							<h2>Who am I ?</h2>
+							<h2 class="dark-mode light-mode">Who am I ?</h2>
 						</header>
 						<ul>
 							<li>
@@ -59,6 +60,17 @@
 							<li>
 								<p>Additionally I love creating vlogs and run a youtube channel as a hobby</p>
 							</li>
+							<!-- Toggle Dark Mode -->
+							<div class="toggler-container">
+									<div class="dark-mode-text-container">
+										<span class="dark-mode-text">Dark Mode fan like me ?</span>
+									</div>
+									<span><label class="switch">
+											<input type="checkbox">
+											<div class="slider round"></div>
+										</label></span>
+							</div>
+
 						</ul>
 					</div>
 					<span class="image"><img src="images/myImg.jpg" alt="" /></span>
@@ -70,7 +82,7 @@
 
 			<section id="experience" class="main">
 				<header class="major">
-					<h2>Professional Experience</h2>
+					<h2 class="dark-mode light-mode">Professional Experience</h2>
 				</header>
 				<div class="company-title">Tata Consultancy Services</div>
 				<div class="company-time">(July 2019 - June 2022)</div>
@@ -122,57 +134,81 @@
 
 				<section id="projects" class="main">
 					<header class="major">
-						<h2>Projects</h2>
+						<h2 class="dark-mode light-mode">Projects</h2>
 					</header>
 					<ul class="features">
 						<li>
-							<a href="https://github.com/Gopesh2210/Vaccine-tracker" target="_blank" class="project-card-anchor-tag"><div class="project-card">
-								<div class="project-card-content">
-									<div class="project-title">COVID-19 Vaccination Slot Tracker</div>
-									<p class="project-content-text">NodeJS application to fetch APIs tracking slots for
-										vaccination and utilized NodeMailer package to mail the slots available</p>
+							<a href="https://github.com/Gopesh2210/Vaccine-tracker" target="_blank"
+								class="project-card-anchor-tag">
+								<div id="project-card" class="project-card">
+									<div class="project-card-content">
+										<div class="project-title">COVID-19 Vaccination Slot Tracker</div>
+										<p class="project-content-text">NodeJS application to fetch APIs tracking slots
+											for
+											vaccination and utilized NodeMailer package to mail the slots available</p>
+											<div class="project-techstack-title">TechStack</div>
+											<div class="project-techstack-items">NodeJS</div>
+									</div>
 								</div>
-							</div></a>
+							</a>
 						</li>
 						<li>
-							<a href="https://github.com/Gopesh2210/Python-Scripts" target="_blank" class="project-card-anchor-tag"><div class="project-card">
-								<div class="project-card-content">
-									<div class="project-title">Task Automation</div>
-									<p class="project-content-text">Python scripts to automate features such as
-										text-scraping,
-										web-scraping , auto redirection to google maps
-									</p>
+							<a href="https://github.com/Gopesh2210/Python-Scripts" target="_blank"
+								class="project-card-anchor-tag">
+								<div id="project-card" class="project-card">
+									<div class="project-card-content">
+										<div class="project-title">Task Automation</div>
+										<p class="project-content-text">Python scripts to automate features such as
+											text-scraping,
+											web-scraping , auto redirection to google maps
+										</p>
+										<div class="project-techstack-title">TechStack</div>
+										<div class="project-techstack-items">Python</div>
+									</div>
 								</div>
-							</div></a>
+							</a>
 						</li>
 						<li>
-							<a href="https://github.com/Gopesh2210/Loan-Predictor" target="_blank" class="project-card-anchor-tag"><div class="project-card">
-								<div class="project-card-content">
-									<div class="project-title">Loan Prediction for Risky Credit Analysis</div>
-									<p class="project-content-text">Application capable of predicting faulty loanee
-										based on
-										their past financial records.
-										Developed in python with Random Forest as the machine learning algorithm.
-									</p>
+							<a href="https://github.com/Gopesh2210/Loan-Predictor" target="_blank"
+								class="project-card-anchor-tag">
+								<div id="project-card" class="project-card">
+									<div class="project-card-content">
+										<div class="project-title">Loan Prediction for Risky Credit Analysis</div>
+										<p class="project-content-text">Application capable of predicting faulty loanee
+											based on
+											their past financial records.
+											Developed in python with Random Forest as the machine learning algorithm.
+										</p>
+										<div class="project-techstack-title">TechStack</div>
+										<div class="project-techstack-items">Python, Flask, ML</div>
+									</div>
 								</div>
-							</div></a>
+							</a>
 						</li>
 						<li>
-							<a href="https://github.com/Gopesh2210/Secure-Notes-App" target="_blank" class="project-card-anchor-tag"><div class="project-card">
-								<div class="project-card-content">
-									<div class="project-title">Secure Notes App</div>
-									<p class="project-content-text">The application is capable of securely storing notes
-										and
-										images for the user. JWT authentication implemented to enhance security to the
-										notes
-										application.</p>
+							<a href="https://github.com/Gopesh2210/Secure-Notes-App" target="_blank"
+								class="project-card-anchor-tag">
+								<div id="project-card" class="project-card">
+									<div class="project-card-content">
+										<div class="project-title">Secure Notes App</div>
+										<p class="project-content-text">The application is capable of securely storing
+											notes
+											and
+											images for the user. JWT authentication implemented to enhance security to
+											the
+											notes
+											application.</p>
+											<div class="project-techstack-title">TechStack</div>
+											<div class="project-techstack-items">Angular, NodeJS, MongoDB, Express</div>
+									</div>
 								</div>
-							</div></a>
+							</a>
 						</li>
 					</ul>
 					<footer class="major">
 						<ul class="actions special">
-							<li><a href="https://github.com/Gopesh2210" target="_blank" class="button">Show More</a>
+							<li><a href="https://github.com/Gopesh2210" target="_blank" id="show-more"
+									class="more-button light-mode dark-mode">Show More</a>
 							</li>
 						</ul>
 					</footer>
@@ -183,7 +219,7 @@
 			<!-- Get Started -->
 			<!-- <section id="cta" class="main special">
 								<header class="major">
-									<h2>Congue imperdiet</h2>
+									<h2 class="dark-mode light-mode">Congue imperdiet</h2>
 									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
 									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
 								</header>
@@ -205,13 +241,18 @@
 					<dt>Phone</dt>
 					<dd>+91 9702279504</dd>
 					<dt>Email</dt>
-					<dd><a href="mailto:grajderk@uci.edu" target="_blank" style="cursor: pointer;">grajderk@uci.edu</a></dd>
+					<dd><a href="mailto:grajderk@uci.edu" target="_blank" style="cursor: pointer;">grajderk@uci.edu</a>
+					</dd>
 				</dl>
 				<ul class="icons">
-					<li><a href="https://www.linkedin.com/in/gopeshrajderkar/" target="_blank" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
-					<li><a href="mailto:grajderk@uci.edu" target="_blank" class="icon brands fa-google alt"><span class="label">Gmail</span></a></li>
-					<li><a href="https://github.com/Gopesh2210" target="_blank" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
-					<li><a href="https://www.youtube.com/user/TheGopesh/featured" target="_blank" class="icon brands fa-youtube alt"><span class="label">Youtube</span></a></li>
+					<li><a href="https://www.linkedin.com/in/gopeshrajderkar/" target="_blank"
+							class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
+					<li><a href="mailto:grajderk@uci.edu" target="_blank" class="icon brands fa-google alt"><span
+								class="label">Gmail</span></a></li>
+					<li><a href="https://github.com/Gopesh2210" target="_blank" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://www.youtube.com/user/TheGopesh/featured" target="_blank"
+							class="icon brands fa-youtube alt"><span class="label">Youtube</span></a></li>
 				</ul>
 			</section>
 			<p class="copyright">Gopesh Rajderkar &copy; 2022</p>
