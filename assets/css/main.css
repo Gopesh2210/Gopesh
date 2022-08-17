@@ -3282,33 +3282,40 @@ table.alt tbody tr td {
 
 /* Experience Section */
 
-.company-title {
-	font-size: 1.75em;
+.job-container{
+	display: flex;
+}
+
+.job-title {
+	font-size: 1.2em;
 	font-weight: 500;
+	margin-right: 5px;
+}
+
+.company-title {
+	font-size: 1.2em;
+	font-weight: 400;
 }
 
 .company-time {
 	font-size: 1em;
 	font-weight: 300;
-}
-
-.sub-company-title {
-	font-size: 1em;
-}
-
-.job-title {
-	font-size: 1.25em;
-	font-weight: 500;
 	margin-bottom: 1em;
 }
 
-.job-project-title {
-	font-size: 1.1em;
-	font-weight: 500;
+.job-task-container{
+	padding: 16px;
 }
 
+.job-project-title {
+	font-size: 1em;
+	font-weight: 500;
+}
+.sub-company-title {
+	font-size: 1em;
+}
 .techstack-title {
-	font-size: 1.1em;
+	font-size: 1em;
 	font-weight: 500;
 	padding-bottom: 0.5em;
 }
@@ -3343,11 +3350,6 @@ table.alt tbody tr td {
 	margin: 0 0 2em 0;
 }
 
-/* .spotlight .image {
-			display: inline-block;
-			margin-left: 4em;
-			padding: 0.65em;
-		} */
 
 .spotlight .image img {
 	display: block;
@@ -3365,8 +3367,12 @@ table.alt tbody tr td {
 		flex-direction: column-reverse;
 	}
 
+	.job-title {
+		font-size: 1em;
+	}
+	
 	.company-title {
-		font-size: 1.5em;
+		font-size: 0.95em;
 	}
 
 	.spotlight .content {
