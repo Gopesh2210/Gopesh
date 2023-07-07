@@ -3286,6 +3286,25 @@ table.alt tbody tr td {
 	display: flex;
 }
 
+.job-container {
+        font-size: 5em;
+        width: 8em;
+        height: 2em;
+        line-height: 2;
+        text-align: center;
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+      }
+.link {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
 .job-title {
 	font-size: 1.2em;
 	font-weight: 500;
@@ -4092,6 +4111,7 @@ body.is-preload #header.alt .logo {
 	font-size: 0.8em;
 	text-align: center;
 }
+
 
 @media screen and (max-width: 1280px) {
 
