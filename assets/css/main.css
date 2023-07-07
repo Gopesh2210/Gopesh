@@ -3286,7 +3286,10 @@ table.alt tbody tr td {
 	display: flex;
 }
 
-.link {
+.company-link {
+    margin: 2em;
+    height: 2em;
+    width: 2em;
       }
 
 .job-title {
