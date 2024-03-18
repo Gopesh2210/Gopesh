@@ -157,16 +157,13 @@ textarea {
 
 /* About me section */
 .profile {
-    width: 80%;
     margin: auto;
-    padding: 16px;
 }
 
 .job h2,
 .extracurricular h2 {
-    font-size: 16px;
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 
@@ -3299,6 +3296,14 @@ table.alt tbody tr td {
 
 .job-container{
 	display: flex;
+}
+
+.job-card{
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
 }
 
 .company-link {
