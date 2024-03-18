@@ -155,6 +155,27 @@ textarea {
 	appearance: none;
 }
 
+/* About me section */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+.job,
+.extracurricular {
+    width: 45%;
+}
+
+.job h2,
+.extracurricular h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
 /* Dark Mode */
 
 #main.dark-mode {
