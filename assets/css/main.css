@@ -178,8 +178,12 @@ textarea {
 	color: white;
 }
 
+#main.dark-mode .job-card {
+	color: white;
+}
+
 #show-more.dark-mode {
-	color: white !important;
+	box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 /* Light Mode */
@@ -191,6 +195,10 @@ textarea {
 
 #main.light-mode h2 {
 	color: black;
+}
+
+#main.light-mode .job-card {
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 #show-more.light-mode {
@@ -3303,14 +3311,6 @@ table.alt tbody tr td {
         padding: 16px;
 	margin-bottom: 24px;
         border-radius: 8px;
-}
-
-.job-card .light-mode{
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.job-card .dark-mode{
-        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 .job-card:hover {
