@@ -157,11 +157,9 @@ textarea {
 
 /* About me section */
 .profile {
-    display: flex;
-    flex-direction: column;
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 16px;
 }
 
 .job h2,
