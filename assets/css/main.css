@@ -179,11 +179,11 @@ textarea {
 }
 
 #main.dark-mode .job-card {
-	color: white;
+	box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
 }
 
 #show-more.dark-mode {
-	box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+	color: white !important;
 }
 
 /* Light Mode */
