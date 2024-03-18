@@ -3301,13 +3301,21 @@ table.alt tbody tr td {
 .job-card{
         width: 100%;
         padding: 16px;
-	margin-bottom: 12px;
+	margin-bottom: 24px;
         border-radius: 8px;
+}
+
+.job-card .light-mode{
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.job-card .dark-mode{
+        box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+}
+
 .job-card:hover {
-        transform: scale(1.05); /* Increase the size of the card on hover */
+        transform: scale(1.03);
+	cursor: pointer;
  }
 
 .company-link {
