@@ -3304,8 +3304,11 @@ table.alt tbody tr td {
 	margin-bottom: 12px;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
 }
+
+.job-card:hover {
+        transform: scale(1.05); /* Increase the size of the card on hover */
+ }
 
 .company-link {
     margin-left: 0.5em;
