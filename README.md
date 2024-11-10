@@ -12,7 +12,7 @@
 </p>
 
 - I am a passionate problem solving and love to deal with real world problems through codes.
--  I have worked with Anthem, Next Generation Robotics, and Tata Consultancy Services, particularly in developing user-centric recommendation systems, cross-platform apps, and data management systems.
+-  I have worked with Commure, Anthem, Next Generation Robotics, and Tata Consultancy Services, particularly in developing user-centric recommendation systems, cross-platform apps, and data management systems.
 - Beyond this I am a hobby travel vlogger running a youtube channel about my adventures.
 
 ## Primary tech stack
