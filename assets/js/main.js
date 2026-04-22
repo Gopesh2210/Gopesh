@@ -125,6 +125,84 @@
 			}
 		});
 
+	// Professional experience — modal dialogs + Commure role tabs
+	var $openExperienceModal = null;
+	var $experienceFocusReturn = null;
+
+	function resetCommureTabs($modal) {
+		var $tabs = $modal.find('.exp-tab');
+		var $panels = $modal.find('.exp-tabpanel');
+		$tabs.removeClass('is-active').attr('aria-selected', 'false');
+		$tabs.first().addClass('is-active').attr('aria-selected', 'true');
+		$panels.prop('hidden', true).removeClass('is-active');
+		$panels.first().prop('hidden', false).addClass('is-active');
+	}
+
+	function closeExperienceModal() {
+		if (!$openExperienceModal || !$openExperienceModal.length)
+			return;
+		$openExperienceModal.removeClass('is-open').prop('hidden', true);
+		$body.removeClass('exp-modal-open');
+		$('[data-exp-modal]').attr('aria-expanded', 'false');
+		if ($experienceFocusReturn && $experienceFocusReturn.length)
+			$experienceFocusReturn.trigger('focus');
+		$openExperienceModal = null;
+		$experienceFocusReturn = null;
+	}
+
+	function openExperienceModal(modalId) {
+		var $modal = $('#' + modalId);
+		if ($modal.length < 1)
+			return;
+
+		if ($openExperienceModal && $openExperienceModal.length) {
+			$openExperienceModal.removeClass('is-open').prop('hidden', true);
+			$body.removeClass('exp-modal-open');
+			$('[data-exp-modal]').attr('aria-expanded', 'false');
+			$openExperienceModal = null;
+		}
+
+		$experienceFocusReturn = $(document.activeElement);
+
+		$modal.prop('hidden', false).addClass('is-open');
+		$body.addClass('exp-modal-open');
+		$('[data-exp-modal="' + modalId + '"]').attr('aria-expanded', 'true');
+		$openExperienceModal = $modal;
+
+		if (modalId === 'modal-exp-commure')
+			resetCommureTabs($modal);
+
+		window.setTimeout(function() {
+			$modal.find('.exp-modal__close').first().trigger('focus');
+		}, 50);
+	}
+
+	$(document).on('click', '[data-exp-modal]', function() {
+		var id = $(this).attr('data-exp-modal');
+		openExperienceModal(id);
+	});
+
+	$(document).on('click', '.exp-modal__backdrop, .exp-modal__close', function() {
+		closeExperienceModal();
+	});
+
+	$(document).on('keydown', function(e) {
+		if (e.key === 'Escape' && $openExperienceModal && $openExperienceModal.length)
+			closeExperienceModal();
+	});
+
+	$(document).on('click', '#modal-exp-commure .exp-tab', function() {
+		var $btn = $(this);
+		var paneId = $btn.attr('data-exp-tab');
+		var $modal = $('#modal-exp-commure');
+		if (!paneId || !$modal.length)
+			return;
+		$modal.find('.exp-tab').removeClass('is-active').attr('aria-selected', 'false');
+		$modal.find('.exp-tabpanel').prop('hidden', true).removeClass('is-active');
+		$btn.addClass('is-active').attr('aria-selected', 'true');
+		$('#' + paneId).prop('hidden', false).addClass('is-active');
+	});
+
 })(jQuery);
 
 
