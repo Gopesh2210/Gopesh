@@ -118,64 +118,72 @@
 						</div>
 						<div class="company-time-wrapper">
 							<span class="time-icon">📅</span>
-							<div class="company-time">April 2024 - Present</div>
+							<div class="company-time">April 2024 - Present · Mountain View, CA</div>
 						</div>
 					</div>
 					<div class="job-task-container">
 	
 						<div class="job-project-title">Revenue Cycle Management (RCM)</div>
-						<div class="techstack-title">TechStack : Python, FastAPI, PostgreSQL, JavaScript, GCP, Grafana</div>
+						<div class="techstack-title">TechStack : Python, FastAPI, PostgreSQL, JavaScript, GCP, Grafana, Prometheus</div>
 						
 						<div class="role-section">
-							<div class="role-title">Senior Software Engineer (May 2025 - Present)</div>
+							<div class="role-title">Senior Software Engineer (March 2026 - Present)</div>
+							
+							<div class="achievement-category">
+								<div class="category-header">🚀 Leadership &amp; Strategy</div>
+								<ul class="achievement-list">
+									<li>Drove technical strategy through quarterly OKR planning, aligning engineering initiatives with business objectives.</li>
+									<li>Led architecture reviews for major features, driving scalable, compliant designs across Clearinghouse integration and data model redesign.</li>
+									<li>Leading a team of <span class="metric-value">4 engineers</span>, fostering strong collaboration through design reviews, agile meets, and hands-on technical guidance.</li>
+								</ul>
+							</div>
+
+							<div class="achievement-category">
+								<div class="category-header">🏗️ Platform &amp; Pipelines</div>
+								<ul class="achievement-list">
+									<li>Built a scalable, fault-tolerant <span class="metric-highlight">data ingestion pipeline</span> processing <span class="metric-value">~100K+ daily patient encounters</span>, with async processing and data validation.</li>
+									<li>Integrated a high-throughput <span class="metric-highlight">JSONpath-based rule engine</span> with the data ingestion pipeline, processing encounter records daily; optimized for low-latency traversal, extensibility of rule definitions, and efficient handling of deeply nested healthcare data structures.</li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="role-section">
+							<div class="role-title">Software Engineer II (May 2025 - March 2026)</div>
 							
 							<div class="achievement-category">
 								<div class="category-header">🚀 Initiatives</div>
 								<ul class="achievement-list">
 									<li>Spearheaded the build of <span class="metric-highlight">Federally Qualified Health Centre (FQHC) billing support</span>, enabling parallel claim submissions across payers using rule-based CPT code selection - unlocking <span class="metric-value">$10M+ in annual revenue</span>.</li>
 									<li>Architected and delivered <span class="metric-highlight">Institutional Billing platform</span>, expanding to first hospital client and generating <span class="metric-value">$3M+ in new revenue</span>.</li>
-									<li>Drove technical strategy through quarterly OKR planning, aligning engineering initiatives with business objectives and growth targets.</li>
-									<li>Led architecture reviews for major features, driving scalable, compliant designs across Dental Billing, Clearinghouse integration, and data model redesign.</li>
-									<li>Empowered and led a <span class="metric-value">team of 4 engineers</span> through agile meetings, technical reviews, and mentorship - driving collaboration and technical excellence across billing and claims systems.</li>
 								</ul>
 							</div>
 
 							<div class="achievement-category">
-								<div class="category-header">⚡ Performance Improvements</div>
+								<div class="category-header">⚡ Performance &amp; Reliability</div>
 								<ul class="achievement-list">
-									<li>Optimized database performance, reducing SQL query latency from <span class="metric-before">6s</span> to <span class="metric-after"><1s</span> in the auto claim submission pipeline, achieving.</li>
-									<li>Re-architected the charges calculator infrastructure through soft deletion, expiration control, and parallelized large dataset ingestion, reducing ingestion time from <span class="metric-before">3 minutes</span> to <span class="metric-after">under 30 seconds</span>.</li>
-									<li>Built observability metrics using Grafana dashboards with Prometheus for real-time monitoring, automated alerting, and failure tracking, reducing <span class="metric-highlight">mean time to recovery (MTTR) by 50%</span>.</li>
+									<li>Optimized database performance, reducing SQL query latency from <span class="metric-before">6s</span> to <span class="metric-after">under 1s</span> in the auto claim submission pipeline.</li>
+									<li>Built observability metrics using Grafana and Prometheus with real-time monitoring and alerting, reducing <span class="metric-highlight">MTTR by 50%</span>.</li>
 								</ul>
 							</div>
 
 							<div class="achievement-category">
-								<div class="category-header">🏗️ Infrastructure Builds</div>
+								<div class="category-header">🏗️ Infrastructure &amp; Developer Experience</div>
 								<ul class="achievement-list">
-									<li>Refactored <span class="metric-highlight">Billing Rules Engine system</span> to reduce technical debt, optimizing database connection pooling and improving database load distribution for better system stability.</li>
-									<li>Built <span class="metric-highlight">observability platform</span> using Grafana dashboards with Prometheus for real-time monitoring, automated alerting, and failure tracking.</li>
-									<li>Automated development workflows using AI tooling - streamlining documentation, project tracking, PR automation, and unit test generation to boost developer velocity.</li>
+									<li>Refactored <span class="metric-highlight">Billing Rules Engine</span> system to reduce technical debt, optimizing database connection pooling and improving database load.</li>
+									<li>Automated development workflows using AI tooling - streamlining documentation, project tracking, PR automation, and unit test generation to boost developer velocity; integrated MCP-based tooling connectivity to enhance developer productivity and accelerate iteration cycles.</li>
 								</ul>
 							</div>
 						</div>
 
 						<div class="role-section">
-							<div class="role-title">Software Engineer (April 2024 - April 2025)</div>
+							<div class="role-title">Software Engineer (April 2024 - May 2025)</div>
 							
 							<div class="achievement-category">
 								<div class="category-header">🚀 Initiatives</div>
 								<ul class="achievement-list">
-									<li>Created a <span class="metric-highlight">Book Charges data model</span> in PostgreSQL and integrated it into the platform to capture procedure billing on the latest claims, serving as the source for accounting views, enabling client-specific reporting and reconciling <span class="metric-value">100K+ monthly transactions</span>.</li>
-									<li>Engineered a robust <span class="metric-highlight">address validation workflow</span> for mailed patient statements using PostGrid and Google Address API, triggered via SQLAlchemy ORM hooks.</li>
-									<li>Built internal tools on Retool in JavaScript to automate key operational tasks, including bulk claim submissions and fee schedule updates, improving operational efficiency.</li>
-								</ul>
-							</div>
-
-							<div class="achievement-category">
-								<div class="category-header">⚡ Performance Improvements</div>
-								<ul class="achievement-list">
-									<li>Engineered address validation workflow, reducing <span class="metric-highlight">address-related delivery failures by over 60%</span>.</li>
-									<li>Developed a FastAPI middleware for error bucketing in claim submissions, accelerating triage and cutting <span class="metric-highlight">correction time by 70%</span> through automated error categorization.</li>
+									<li>Created a <span class="metric-highlight">Book Charges data model</span> in PostgreSQL and integrated it into the platform to capture procedure billing on the latest claims, serving as the source for accounting views, enabling client-specific reporting and reconciling <span class="metric-value">100K+ weekly transactions</span>.</li>
+									<li>Engineered a robust <span class="metric-highlight">address validation workflow</span> for mailed patient statements using PostGrid and Google Address API, triggered via SQLAlchemy ORM hooks, reducing <span class="metric-highlight">address-related delivery failures by over 60%</span>.</li>
+									<li>Built internal tools on Retool in JavaScript to automate key operational tasks, including bulk claim submissions and fee schedule updates.</li>
 								</ul>
 							</div>
 
@@ -183,7 +191,7 @@
 								<div class="category-header">🏗️ Infrastructure Builds</div>
 								<ul class="achievement-list">
 									<li>Built a high-throughput <span class="metric-highlight">PDF processing system</span> using PyMuPDF and Google Cloud Run Tasks, enabling scalable extraction and delivery of patient claims data and reports at <span class="metric-value">1000+ PDFs per batch</span>.</li>
-						</ul>
+								</ul>
 							</div>
 						</div>
 					</div>
